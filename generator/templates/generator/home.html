@@ -1,0 +1,46 @@
+<!-- This is Bootstrap 4.4.1 used in the tutorial
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+This is Bootstrap 5.3.1 which is the most recent version...
+-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+<div class="container text-center">
+    
+    <!-- 
+    This html code creates a form that has a dropdown list with 6 options.
+    It also creates a submission button labeled 'Generate Password'. When the user 
+    selects an option and clicks the button, the action will send the user to the 
+    \password page which references the password.html.
+    
+    We use the selected option to define the selected value by default. In this
+    case we chose 12 as the default length of the password.
+    -->
+    <h1>Password Generator</h1>
+    
+    <form action="password">
+        <select name = "length">
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12" selected="selected">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+        </select> Length
+        
+        <br>
+        <input type="checkbox" name="uppercase"> Uppercase
+        <br>
+        <input type="checkbox" name="numbers"> Numbers
+        <br>
+        <input type="checkbox" name="special"> Special Charachters
+        <br>
+        
+        <input type="submit" value="Generate Password" class="btn btn-primary">
+    </form>
+</div>
